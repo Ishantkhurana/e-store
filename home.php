@@ -110,7 +110,7 @@ if(!isset($_SESSION['email'])){
                 <div class="col-md-4 col-sm-12">
                          <div class="thumbnail">                    
                              <img src="images/onep.jpg" class="img-responsive">
-                        <br>   <h4><em>ONE PLUS - 7T (6.3inch Display,6GB Ram,128GB Storage, Snapdragon-675 Processor, 48MP HD-camera) at <u>Rs36,000.</u></em> </h4>
+                        <br>   <h4><em>ONE PLUS - 7T (6.3inch Display,6GB Ram,128GB Storage, Snapdragon-675 Processor) at <u>Rs36,000.</u></em> </h4>
                         <br>       <?php
                           if (check_if_added_to_cart(6)) { 
                                     echo '<a href="#" class="btn btn-block btn-success" disabled>Added to cart</a>';
