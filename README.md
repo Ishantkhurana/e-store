@@ -1,1 +1,1 @@
-# e-store.
+Heyy👋This is an E-Commerce Website made in PHP Languages and has all basic functionalities of an E-Commerce website.It is running on WAMP Server and using MY-SQL as Database.Its Frontend is built using HTML,CSS<Bootstrap3 Technologies.Some of the Screenshots of this website are attached below👇👇
