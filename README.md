@@ -1,4 +1,4 @@
-Heyy👋This is an E-Commerce Website made in PHP Language and has all basic functionalities of an E-Commerce website.It is running on WAMP Server and using MY-SQL as Database.Its Frontend is built using HTML,CSS,Bootstrap3 Technologies.Some of the Screenshots of this website are attached below👇👇
+Heyy👋This is an E-Commerce Website made in PHP Language💻 and has all basic functionalities of an E-Commerce website🎲.It is running on WAMP Server💻 and using MY-SQL as Database📂.Its Frontend is built using HTML,CSS,Bootstrap3 Technologies💻.Some of the Screenshots of this website are attached below👇👇
 
 ![Screenshot (210)](https://user-images.githubusercontent.com/56023771/131107305-110e906e-5a81-4905-8dd0-35e590474554.png)
 
