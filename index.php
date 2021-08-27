@@ -105,7 +105,7 @@ if(isset($_SESSION['email'])){
                          </div>
                 <div class="col-md-4 col-sm-12">
                          <div class="thumbnail">                    
-                             <img src="images/oneplus.jpg" class="img-responsive">
+                             <img src="images/onep.jpg" class="img-responsive">
                        <br>   <h4><em>ONE PLUS - 7T (6.3inch Display,6GB Ram,128GB Storage, Snapdragon-675 Processor, 48MP HD-camera) at <u>Rs36,000.</u></em> </h4>
                         <br>       <a href="signup.php" class="btn btn-primary btn-block">Order Now</a>
                     </div>
