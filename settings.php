@@ -7,9 +7,10 @@ if(!isset($_SESSION['email'])){
 <!DOCTYPE html>
 <html>
 <head>
+      <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
       <link rel=stylesheet type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
-    <script src="bootstrap-3.3.7-dist/jquery.min.js"></script>
-    <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>Settings</title>
       <meta charset="UTF-8">
@@ -42,7 +43,7 @@ if(!isset($_SESSION['email'])){
         <br><br><br><br><br>
         <div class="container">
         <div class="row">
-            <div class="col-xs-6 col-md-offset-3">      
+            <div class="col-xs-12 col-sm-6 col-sm-offset-3">      
                 <h3>Change Password</h3><br>
                 <form action="setting-script.php" method="post">
                 <div class="form-group">
@@ -64,21 +65,27 @@ if(!isset($_SESSION['email'])){
                 <div class="container-fluid">
                     <div class="row">
                 <div class="foot">
-                    <div class="visible-sm visible-xs">
-                         <div class="row">
-                        <div class="col-xs-4">  <h3> Information</h3></div>
-                        <div class="col-xs-4">    <h3> My Account</h3> </div>                        
-                        <div class="col-xs-4">  <h3> Contact Us</h3></div>  
+                     <div class="visible-sm visible-xs">
+                       <div class="row">
+                        <div class="col-xs-5">  <h3> Information</h3></div>
+                        <div class="col-xs-6 col-xs-offset-1">    <h3> My Account</h3> </div>                        
                     </div>
                 <div class="row">
-                    <div class="col-xs-4">  <h4><a href='about.php'>About Us</h4></a></div>
-                    <div class="col-xs-4">   <h4><a href='cart.php'>Cart</h4></a></div>                       
-                        <div class="col-xs-4">  <h4>Contact +91 123 0000000</h4></div>
+                    <div class="col-xs-5 col-xs-offset-1">  <h4><a href='about.php'>About Us</h4></a></div>
+                    <div class="col-xs-5 col-xs-offset-1">   <h4><a href='cart.php'>Cart</h4></a></div>       
+                       
                     </div>
                     <div class="row">
-                          <div class="col-xs-4">  <h4><a href='contact.php'>Contact Us</h4></a></div>
-                    <div class="col-xs-4">   <h4><a href='settings.php'>Settings</h4></a></div>  
+                          <div class="col-xs-5 col-xs-offset-1">  <h4><a href='contact.php'>Contact Us</h4></a></div>
+                    <div class="col-xs-5 col-xs-offset-1">   <h4><a href='settings.php'>Settings</h4></a></div>       
+                    </div> 
+                        <div class="row">
+                            <div class="col-xs-6 col-xs-offset-3 center">  <h3> Contact Us</h3></div>
+                           
                     </div>
+                        <div class="row">
+                            <div class="col-xs-6 col-xs-offset-3 center">  <h4>Dial <span class="glyphicon glyphicon-earphone"></span> +91 123 0000000</h4></div>
+                        </div>
                     </div>
                     <div class="visible-md visible-lg">
                     <div class="row">
@@ -100,6 +107,7 @@ if(!isset($_SESSION['email'])){
                 </div>
                 </div>
             </footer>
-       
+        <script type=text/javascript src="bootstrap-3.3.7-dist/jquery.min.js"></script>
+    <script type=text/javascript src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
 </body>
 </html>

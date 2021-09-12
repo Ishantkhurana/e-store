@@ -29,26 +29,9 @@ body{
     padding-left: 40px;
     width: 100%;
      text-align: justify;
-display: inline-block;
 }
 .support p{
-display: inline-block;
-    width:80%;
-
 padding-right:22px;
-}
-.support img{
-display: inline-block;
-  position: relative;
-top:-68px;
-
-}
-.info{
-    position: relative;
-    top:-45px;
-}
-.info h4{
-    width:69%;
 }
 .sign img{
     display: inline;
@@ -60,6 +43,9 @@ top:-68px;
     display: inline;
     width: 70%;
  
+}
+.mar h2{
+    padding-right:40px;
 }
 .sign h3{
   display: inline; 

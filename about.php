@@ -4,9 +4,10 @@ require 'session-common.php';
 <!DOCTYPE html>
 <html>
     <head>
+          <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
               <link rel=stylesheet type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
-    <script type=text/javascript src="bootstrap-3.3.7-dist/jquery.min.js"></script>
-    <script type=text/javascript src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>  
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>About Us</title>
     </head>
@@ -140,19 +141,25 @@ require 'session-common.php';
                 <div class="foot">
                     <div class="visible-sm visible-xs">
                        <div class="row">
-                        <div class="col-xs-4">  <h3> Information</h3></div>
-                        <div class="col-xs-4">    <h3> My Account</h3> </div>                        
-                        <div class="col-xs-4">  <h3> Contact Us</h3></div>
+                        <div class="col-xs-5">  <h3> Information</h3></div>
+                        <div class="col-xs-6 col-xs-offset-1">    <h3> My Account</h3> </div>                        
                     </div>
                 <div class="row">
-                    <div class="col-xs-4">  <h4><a href='about.php'>About Us</h4></a></div>
-                    <div class="col-xs-4">   <h4><button classs="btn" id="log" data-toggle="modal" data-target="#Modal" >Login</button></h4></div>                       
-                        <div class="col-xs-4">  <h4>Contact +91 123 0000000</h4></div>
+                    <div class="col-xs-5 col-xs-offset-1">  <h4><a href='about.php'>About Us</h4></a></div>
+                    <div class="col-xs-5 col-xs-offset-1">   <h4><button classs="btn" id="log" data-toggle="modal" data-target="#Modal" >Login</button></h4></div>                       
+                       
                     </div>
                     <div class="row">
-                          <div class="col-xs-4">  <h4><a href='contact.php'>Contact Us</h4></a></div>
-                    <div class="col-xs-4">   <h4><a href='signup.php'>Signup</h4></a></div>     
-                    </div>  
+                          <div class="col-xs-5 col-xs-offset-1">  <h4><a href='contact.php'>Contact Us</h4></a></div>
+                    <div class="col-xs-5 col-xs-offset-1">   <h4><a href='signup.php'>Signup</h4></a></div>     
+                    </div> 
+                        <div class="row">
+                            <div class="col-xs-6 col-xs-offset-3 center">  <h3> Contact Us</h3></div>
+                           
+                    </div>
+                        <div class="row">
+                            <div class="col-xs-6 col-xs-offset-3 center">  <h4>Dial <span class="glyphicon glyphicon-earphone"></span> +91 123 0000000</h4></div>
+                        </div>
                     </div>
                      <div class="visible-md visible-lg">
                     <div class="row">
@@ -175,25 +182,31 @@ require 'session-common.php';
                 </div>
             </footer>
         <?php } else { ?>
-            <footer>
+           <footer>
                 <div class="container-fluid">
                     <div class="row">
                 <div class="foot">
-                    <div class="visible-sm visible-xs">
-                         <div class="row">
-                        <div class="col-xs-4">  <h3> Information</h3></div>
-                        <div class="col-xs-4">    <h3> My Account</h3> </div>                        
-                        <div class="col-xs-4">  <h3> Contact Us</h3></div>  
+                     <div class="visible-sm visible-xs">
+                       <div class="row">
+                        <div class="col-xs-5">  <h3> Information</h3></div>
+                        <div class="col-xs-6 col-xs-offset-1">    <h3> My Account</h3> </div>                        
                     </div>
                 <div class="row">
-                    <div class="col-xs-4">  <h4><a href='about.php'>About Us</h4></a></div>
-                    <div class="col-xs-4">   <h4><a href='cart.php'>Cart</h4></a></div>                       
-                        <div class="col-xs-4">  <h4>Contact +91 123 0000000</h4></div>
+                    <div class="col-xs-5 col-xs-offset-1">  <h4><a href='about.php'>About Us</h4></a></div>
+                    <div class="col-xs-5 col-xs-offset-1">   <h4><a href='cart.php'>Cart</h4></a></div>       
+                       
                     </div>
                     <div class="row">
-                          <div class="col-xs-4">  <h4><a href='contact.php'>Contact Us</h4></a></div>
-                    <div class="col-xs-4">   <h4><a href='settings.php'>Settings</h4></a></div>  
+                          <div class="col-xs-5 col-xs-offset-1">  <h4><a href='contact.php'>Contact Us</h4></a></div>
+                    <div class="col-xs-5 col-xs-offset-1">   <h4><a href='settings.php'>Settings</h4></a></div>       
+                    </div> 
+                        <div class="row">
+                            <div class="col-xs-6 col-xs-offset-3 center">  <h3> Contact Us</h3></div>
+                           
                     </div>
+                        <div class="row">
+                            <div class="col-xs-6 col-xs-offset-3 center">  <h4>Dial <span class="glyphicon glyphicon-earphone"></span> +91 123 0000000</h4></div>
+                        </div>
                     </div>
                     <div class="visible-md visible-lg">
                     <div class="row">
@@ -215,8 +228,10 @@ require 'session-common.php';
                 </div>
                 </div>
             </footer>
+        
         <?php } ?>
          </div>
-            
+          <script type=text/javascript src="bootstrap-3.3.7-dist/jquery.min.js"></script>
+    <script type=text/javascript src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>  
     </body>
 </html>
