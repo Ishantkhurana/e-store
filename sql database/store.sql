@@ -1,14 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.9.2
+-- version 5.0.2
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Jul 10, 2020 at 02:12 PM
--- Server version: 10.4.10-MariaDB
--- PHP Version: 7.3.12
+-- Generation Time: Sep 24, 2021 at 10:38 AM
+-- Server version: 5.7.31
+-- PHP Version: 7.3.21
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -21,6 +20,28 @@ SET time_zone = "+00:00";
 --
 -- Database: `store`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `contact`
+--
+
+DROP TABLE IF EXISTS `contact`;
+CREATE TABLE IF NOT EXISTS `contact` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` char(20) NOT NULL,
+  `email` varchar(35) NOT NULL,
+  `message` varchar(100) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `contact`
+--
+
+INSERT INTO `contact` (`id`, `name`, `email`, `message`) VALUES
+(1, 'Ishant Khurana', 'ishant@xyz.com', 'hello');
 
 -- --------------------------------------------------------
 
@@ -64,17 +85,13 @@ CREATE TABLE IF NOT EXISTS `users` (
   `city` varchar(255) NOT NULL,
   `address` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=41 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=44 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `users`
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `password`, `contact`, `city`, `address`) VALUES
-(1, 'Amit', 'amit@xyz.com', '1234', '10989876', 'Delhi', 'East rohini'),
-(2, 'Gourav', 'gourav@xyz.com', '1234', '123456784', 'Noida', ' Near East road side park'),
-(3, 'Naresh', 'naresh@xyz.com', '1234', '12346742', 'Gurugram', 'Sector 99'),
-(10, 'Ishant Khurana', 'ishantkhurana@xyz.com', 'c8837b23ff8aaa8a2dde915473ce0991', '1234567890', 'hansi', 'hno 860/20 roop nagar colony'),
 (11, 'amit', 'amit@xyz.com', 'c8837b23ff8aaa8a2dde915473ce0991', '1234567890', 'hansi', 'hno 860/20 roop nagar colony'),
 (12, 'Monika', '', '6f3fc039bfe1efdb272111f276a0e84a', '9087654321', 'kurukshetra', 'girls hostel '),
 (13, 'himi', 'himi12@xyz.com', 'c8837b23ff8aaa8a2dde915473ce0991', '9138104237', 'hansi', 'huda'),
@@ -98,7 +115,9 @@ INSERT INTO `users` (`id`, `name`, `email`, `password`, `contact`, `city`, `addr
 (37, 'bhushan', 'bhushi30@xyz.com', 'e10adc3949ba59abbe56e057f20f883e', '9087654321', 'hansi', 'lal sarak'),
 (38, 'shweta', 'shweta12@xyz.com', 'e10adc3949ba59abbe56e057f20f883e', '1234567890', 'kurukshetra', 'kurukshetra'),
 (39, 'ishu', 'ishuboy07@xyz.com', 'bcf35bc9c1d1950a5cd08b437addcb00', '9138104237', 'hansi', 'hno 860/20 roop nagar colony'),
-(40, 'deepika', 'deepika7@xyz.com', 'e10adc3949ba59abbe56e057f20f883e', '1234567890', 'hansi', 'hansi');
+(40, 'deepika', 'deepika7@xyz.com', 'e10adc3949ba59abbe56e057f20f883e', '1234567890', 'hansi', 'hansi'),
+(41, 'ishant_khurana', 'bhushi31@xyz.com', '438124347b4cb1c16f1d3282d746f5a8', '9087654321', 'Hansi', 'dlf phase 3'),
+(42, 'Ishant Khurana', 'ishant12@xyz.com', '79ae67412b21094e3f496970ece3749c', '1234567890', 'Hansi', 'HUDA');
 
 -- --------------------------------------------------------
 
@@ -115,14 +134,16 @@ CREATE TABLE IF NOT EXISTS `user_items` (
   PRIMARY KEY (`id`),
   KEY `item_id` (`item_id`),
   KEY `user_id` (`user_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=46 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=49 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `user_items`
 --
 
 INSERT INTO `user_items` (`id`, `user_id`, `item_id`, `status`) VALUES
-(27, 24, 3, 'Added to cart');
+(27, 24, 3, 'Added to cart'),
+(47, 37, 1, 'Confirmed'),
+(48, 37, 1, 'Added to cart');
 
 --
 -- Constraints for dumped tables
