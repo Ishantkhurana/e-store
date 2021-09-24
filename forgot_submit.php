@@ -43,7 +43,7 @@
           <form action="login_submit.php" method="post">
               <div>Don't have an account?<a href="signup.php">Register</a><br></div><br>
               <input type="email" placeholder="Email" required="true" name="email" class="form-control"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">
-              <br>   <input type="password" placeholder="Password" required="true" name="password" class="form-control" pattern=".{6}" >
+              <br>   <input type="password" placeholder="Password" required="true" name="password" class="form-control" minlength="6" >
               <br><button class="btn btn-primary" value="Login">Login</button>
               <br><br>   <a href="forgot-pwd.php" > Forgot Password? </a>
           </form>
@@ -111,6 +111,11 @@
                     <div class="col-md-4 col-sm-6">   <h4><a href='signup.php'>Signup</h4></a></div>     
                     </div>
                      </div>
+                    <div class="row">
+                        <div class="col-12 text-center namee"><br>
+                            <h3><strong>Designed and created by <a href="https://github.com/Ishantkhurana" target="_blank">Ishant Khurana</a> with <span style="color: red">❤</span></strong></h3>
+                             </div>
+                         </div>
                 </div>
                 </div>
                 </div>

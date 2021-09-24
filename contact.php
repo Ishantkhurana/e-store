@@ -47,7 +47,7 @@ require 'session-common.php';
           <form action="login_submit.php" method="post">
               <div>Don't have an account?<a href="signup.php">Register</a><br></div><br>
               <input type="email" placeholder="Email" required="true" name="email" class="form-control"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">
-              <br>   <input type="password" placeholder="Password" required="true" name="password" class="form-control" pattern=".{6}" >
+              <br>   <input type="password" placeholder="Password" required="true" name="password" class="form-control" minlength="6" >
               <br><button class="btn btn-primary" value="Login">Login</button>
               <br><br>   <a href="forgot-pwd.php" > Forgot Password? </a>
           </form>
@@ -114,7 +114,7 @@ require 'session-common.php';
              <div class="container">
                  <div class="row">
                      <h2 class="col-xs-12"><strong>Contact Us</strong></h2>
-                     <form action="support.php" method="post">
+                     <form action="contactsubmit.php" method="post">
                          <div class="form-group">
                              
                              <div class="col-sm-8 col-xs-12">
@@ -122,7 +122,7 @@ require 'session-common.php';
                          <label for="name">Name</label>
                          <input type="text" name='name' class="form-control"><br>
                              <label for="email">Email</label>
-                             <input type="email" name='email' class="form-control"><br>
+                             <input type="email" name='email' class="form-control" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"><br>
                              <label for="message">Message</label><br>
                              <textarea class="form-control" name="message" rows="10" cols='96'></textarea><br>
                              
@@ -186,6 +186,11 @@ require 'session-common.php';
                     <div class="col-md-4 col-sm-6">   <h4><a href='signup.php'>Signup</h4></a></div>     
                     </div>
                      </div>
+                    <div class="row">
+                        <div class="col-12 text-center namee"><br>
+                            <h3><strong>Designed and created by <a href="https://github.com/Ishantkhurana" target="_blank">Ishant Khurana</a> with <span style="color: red">❤</span></strong></h3>
+                             </div>
+                         </div>
                 </div>
                 </div>
                 </div>
@@ -233,6 +238,11 @@ require 'session-common.php';
                     <div class="col-md-4 col-sm-6">   <h4><a href='settings.php'>Settings</h4></a></div>     
                     </div>
                     </div>
+                    <div class="row">
+                        <div class="col-12 text-center namee"><br>
+                            <h3><strong>Designed and created by <a href="https://github.com/Ishantkhurana" target="_blank">Ishant Khurana</a> with <span style="color: red">❤</span></strong></h3>
+                             </div>
+                         </div>
                 </div>
                 </div>
                 </div>

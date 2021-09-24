@@ -65,7 +65,7 @@ if(!isset($_SESSION['email'])){
                                     echo "<tr><em><td>" . "#" . $row["id"] . " </td> <td>" . $row["Name"] . " </td> <td>Rs " . $row["Price"] . " </td> <td><a href='cart-remove.php?id={$row['id']}' class='remove_item_link btn btn-danger'> Remove</a></td></em></tr>";
                                 }
                                 $id = rtrim($id, ", ");
-                                echo "<tr><td></td><td><strong>Total</strong></td><td>Rs " . $sum . "</td><td><a href='success.php?itemsid=" . $id . "' class='btn btn-info'> Confirm Order</a></td></tr>";
+                                echo "<tr><td></td><td><strong>Total</strong></td><td>Rs " . $sum . "</td><td><a href='success.php?id=" . $id . "' class='btn btn-info'> Confirm Order</a></td></tr>";
                         ?>
        
        
@@ -146,6 +146,11 @@ if(!isset($_SESSION['email'])){
                     <div class="col-md-4 col-sm-6">   <h4><a href='settings.php'>Settings</h4></a></div>     
                     </div>
                     </div>
+                    <div class="row">
+                        <div class="col-12 text-center namee"><br>
+                            <h3><strong>Designed and created by <a href="https://github.com/Ishantkhurana" target="_blank">Ishant Khurana</a> with <span style="color: red">❤</span></strong></h3>
+                             </div>
+                         </div>
                 </div>
                 </div>
                 </div>

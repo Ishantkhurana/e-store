@@ -164,7 +164,13 @@ if(!isset($_SESSION['email'])){
                           <div class="col-md-4 col-sm-6">  <h4><a href='contact.php'>Contact Us</h4></a></div>
                     <div class="col-md-4 col-sm-6">   <h4><a href='settings.php'>Settings</h4></a></div>     
                     </div>
+                        
                     </div>
+                    <div class="row">
+                        <div class="col-12 text-center namee"><br>
+                            <h3><strong>Designed and created by <a href="https://github.com/Ishantkhurana" target="_blank">Ishant Khurana</a> with <span style="color: red">❤</span></strong></h3>
+                             </div>
+                         </div>
                 </div>
                 </div>
                 </div>
